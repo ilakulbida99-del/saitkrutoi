@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnhunt - Охотничий магазин</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/finnhunt_logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="logo">
+                    <img src="images/finnhunt_logo.png" alt="Finnhunt" class="logo-img">
+                    Finnhunt
+                </a>
+                
+                <div class="header-actions">
+                    <a href="#" class="header-btn" id="profile-btn">
+                        <i class="far fa-user"></i>
+                        <span>Профиль</span>
+                    </a>
+                    <a href="favorites.html" class="header-btn">
+                        <i class="far fa-heart"></i>
+                        <span>Избранное</span>
+                    </a>
+                    <a href="#" class="header-btn cart-icon" id="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Корзина</span>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <nav>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="costumes.html" class="nav-link">Костюмы</a></li>
+                    <li><a href="kits.html" class="nav-link">Комплекты</a></li>
+                    <li><a href="shoes.html" class="nav-link">Обувь</a></li>
+                    <li><a href="accessories.html" class="nav-link">Аксессуары</a></li>
+                    <li><a href="sales.html" class="nav-link">Акции</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Профессиональная охотничья экипировка</h1>
+            <p>Всё для настоящих охотников: качественные костюмы, обувь и снаряжение для комфортной охоты в любых условиях</p>
+            <div class="hero-buttons">
+                <a href="costumes.html" class="btn btn-primary">Смотреть каталог</a>
+                <a href="sales.html" class="btn btn-secondary">Акционные предложения</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="container">
+        <h2 class="section-title">Категории товаров</h2>
+        <div class="categories">
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <h3>Охотничьи костюмы</h3>
+                <p>Камуфляжные костюмы для любой местности и сезона</p>
+                <a href="costumes.html" class="category-btn">Смотреть</a>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-vest"></i>
+                </div>
+                <h3>Комплекты</h3>
+                <p>Полные комплекты экипировки для охоты</p>
+                <a href="kits.html" class="category-btn">Смотреть</a>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-shoe-prints"></i>
+                </div>
+                <h3>Обувь</h3>
+                <p>Прочная и удобная обувь для охоты</p>
+                <a href="shoes.html" class="category-btn">Смотреть</a>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-binoculars"></i>
+                </div>
+                <h3>Аксессуары</h3>
+                <p>Прицелы, сумки, ножи и другие аксессуары</p>
+                <a href="accessories.html" class="category-btn">Смотреть</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="container">
+        <h2 class="section-title">Популярные товары</h2>
+        <div class="products" id="products-container">
+            <div class="product-card">
+                <img src="https://finnhunt.com/upload/iblock/8b2/b0rqyqvtlvpl8duuhfhvf1u1pvg3qvo5/01-_2_.jpg" alt="Костюм охотничий" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Костюм FINNHUNT Reliable Forest Camo APS PRO</h3>
+                    <div class="product-price">12 990 ₽</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="1">В корзину</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://finnhunt.com/upload/iblock/a72/wxgiwc8rsr6w4uxq240gms6qtve7qccr/Finnhunt-13.png" alt="Охотничьи ботинки" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Комплект №2 (+5 до -15)</h3>
+                    <div class="product-price">8 490 ₽</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="2">В корзину</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://finnhunt.com/upload/iblock/8f0/1x97gdbj3r83ae109i7e15ma84imcn3i/01-_2_.jpg" alt="Охотничьи ботинки" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Ботинки FINNHUNT Nitrogen Fitgo</h3>
+                    <div class="product-price">6 990 ₽</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="3">В корзину</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://finnhunt.com/upload/iblock/692/gcb9rypl89jlaiyeky3q2o22zvf6wexd/novinki-_9_.png" alt="Бинокль" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Перчатки демисезонные FINNHUNT March Camo</h3>
+                    <div class="product-price">15 490 ₽</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="4">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Гарантия качества</h3>
+                    <p>Все товары проходят строгий контроль качества</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставка по всей России за 1-3 дня</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Экспертная поддержка</h3>
+                    <p>Консультации опытных охотников</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Легкий возврат</h3>
+                    <p>Возврат товара в течение 30 дней</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Вход в аккаунт</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="auth-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password" placeholder="Введите пароль">
+                </div>
+                <button class="btn btn-primary" id="login-btn">Войти</button>
+                <p class="auth-switch">Нет аккаунта? <a href="#" id="show-register">Зарегистрироваться</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Регистрация</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="auth-form">
+                <div class="form-group">
+                    <label for="register-name">Имя</label>
+                    <input type="text" id="register-name" placeholder="Введите ваше имя">
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Пароль</label>
+                    <input type="password" id="register-password" placeholder="Придумайте пароль">
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm">Подтвердите пароль</label>
+                    <input type="password" id="register-confirm" placeholder="Повторите пароль">
+                </div>
+                <button class="btn btn-primary" id="register-btn">Зарегистрироваться</button>
+                <p class="auth-switch">Уже есть аккаунт? <a href="#" id="show-login">Войти</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Корзина покупок</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            
+            <div class="cart-items" id="cart-items">
+                <div class="empty-cart" id="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Ваша корзина пуста</p>
+                </div>
+            </div>
+            
+            <div class="cart-summary" id="cart-summary" style="display: none;">
+                <div class="form-group">
+                    <label for="delivery-address">Адрес доставки</label>
+                    <input type="text" id="delivery-address" placeholder="Введите адрес доставки">
+                </div>
+                <div class="summary-row">
+                    <span>Промежуточный итог:</span>
+                    <span id="subtotal">0 ₽</span>
+                </div>
+                <div class="summary-row">
+                    <span>Доставка:</span>
+                    <span>Бесплатно</span>
+                </div>
+                <div class="summary-row summary-total">
+                    <span>Итого:</span>
+                    <span id="total">0 ₽</span>
+                </div>
+                
+                <div class="cart-actions">
+                    <button class="btn btn-secondary" id="clear-cart-btn">Очистить корзину</button>
+                    <button class="btn btn-primary checkout-btn" id="checkout-btn">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Finnhunt</h3>
+                    <p>Профессиональный охотничий магазин. Мы предлагаем только качественные товары от проверенных производителей.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Покупателям</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Категории</h3>
+                    <ul class="footer-links">
+                        <li><a href="costumes.html">Охотничьи костюмы</a></li>
+                        <li><a href="kits.html">Комплекты</a></li>
+                        <li><a href="shoes.html">Обувь</a></li>
+                        <li><a href="accessories.html">Аксессуары</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 195248, СПб, ул. Партизанская д.23 к.2</li>
+                        <li><i class="fas fa-phone"></i> +7 911 647  65-75</li>
+                        <li><i class="fas fa-envelope"></i> info@finnhunt.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Finnhunt. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
